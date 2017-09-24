@@ -1,9 +1,9 @@
 ﻿#include "mainwindow.h"
 #include "ui_mainwindow.h"
-//#include"test.h"
+#include"test.h"
 
-QSettings *configIniRead = new QSettings("test.ini", QSettings::IniFormat);
-QString test1 = configIniRead->value("/CH/CH_1024").toString();
+//QSettings *configIniRead = new QSettings("test.ini", QSettings::IniFormat);
+//QString test1 = configIniRead->value("/CH/CH_1024").toString();
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -26,7 +26,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButton_clicked()
 {
-    QString fn1 = QFileDialog::getOpenFileName(NULL,QStringLiteral("标题"),".","*.txt");
+    /*QString fn1 = QFileDialog::getOpenFileName(NULL,QStringLiteral("标题"),".","*.txt");
     QFile f(fn1);//打开文件
     if(!f.open(QIODevice::ReadOnly | QIODevice::Text))//异常处理
     {
@@ -41,12 +41,12 @@ void MainWindow::on_pushButton_clicked()
     {
         lineStr = txtInput.readLine();
         sum +=lineStr;
-    }
+    }*/
 }
 
 void MainWindow::on_pushButton_2_clicked()
 {
-    QString file_name = QFileDialog::getOpenFileName(NULL,QStringLiteral("标题"),".","*.txt");
+    /*QString file_name = QFileDialog::getOpenFileName(NULL,QStringLiteral("标题"),".","*.txt");
     QFile qf(file_name);//打开文件
     if(!qf.open(QIODevice::ReadOnly | QIODevice::Text))//异常处理
     {
@@ -61,4 +61,6 @@ void MainWindow::on_pushButton_2_clicked()
         lineStr = txtInput.readLine();
         sum +=lineStr;
     }
+    ui->label_5->setText(test1);
+    */
 }

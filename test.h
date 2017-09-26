@@ -2,8 +2,9 @@
 #define TEST_H
 #endif // TEST_H
 
-struct Config
+class Config
 {
+public:
     int CH;//道数
     int Min,Max;		//寻峰容差
     float Rn_C1,Rn_C2,Rn_C3;		//Rn校正系数
@@ -19,4 +20,4 @@ struct Config
 
 };
 
-void _Config_File(void);
+void _Config_File(Config &);

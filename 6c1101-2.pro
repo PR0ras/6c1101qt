@@ -27,12 +27,14 @@ SOURCES += \
         main.cpp \
         mainwindow.cpp \
     qcustomplot.cpp \
-    test.cpp
+    test.cpp \
+    calibration.cpp
 
 HEADERS += \
         mainwindow.h \
     qcustomplot.h \
-    test.h
+    test.h \
+    calibration.h
 
 FORMS += \
         mainwindow.ui
